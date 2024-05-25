@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: sb-l2-redis
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 5
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        cache:
+          use_second_level_cache: false
